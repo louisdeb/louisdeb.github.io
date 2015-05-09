@@ -1,0 +1,32 @@
+body {
+    background-color: black;
+    color: white;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-y: hidden;
+}
+
+.centre-wrapper {
+    text-align: center;
+}
+
+#circle {
+    margin: 0 auto;
+    margin-top: 55%;        
+    width: 40px;
+    height: 40px;
+    background: white;
+    /* moz-border-radius: 50px; */
+    -webkit-border-radius: 50px;
+    border-radius: 50px;
+}
+
+.hollow-circle {
+
+    margin: 0 auto;
+    width: 40px;
+    height: 40px;
+    border: 2px solid white;
+    border-radius: 50px;
+}
