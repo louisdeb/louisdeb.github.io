@@ -1,46 +1,62 @@
 
-$(function() {
-    slideUpCircle();    
+$(function() {    
+    $('#sound-message').delay(1000).fadeOut(1000);        
+
+    setTimeout("slideUpCircle()", 2000);
     waitForClick();    
 })
 
 function slideUpCircle() {
-    var circle = $('#circle');    
+    var circle = $('#circle');  
     circle.animate({
-        top : '-=50%'
-    }, 3000, 'easeOutQuint');
+        top : '-=51.5%'
+    }, 3000, 'easeOutQuint');    
 }
 
 function waitForClick() {    
     var circle = $('#circle');
     var parent = $('#centre-wrapper');
-    var n = 0;
+    var n = 0;    
 
-    circle.click(function() {        
-        n++;
+    circle.click(function() { 
 
-        parent.append("<div class='hollow-circle'></div>");
-        var hollowCircle = $(".hollow-circle");
+        if(!circle.is(':animated')) {           
 
-        hollowCircle.animate({
-            width : '+=2500px',
-            height : '+=2500px',
-            top : '-=1250px',
-            left : '-=1250px'
-        }, 2000, function() {
-            n--;
-            hollowCircle.remove();
-        });
+            parent.append("<div class='hollow-circle'></div>");
+            var hollowCircle = $(".hollow-circle");
+            n++;
 
-        if(n > 12) {
-            
-            circle.remove();    
-            turnWhite();
+            hollowCircle.animate({
+                width : '+=2500px',
+                height : '+=2500px',
+                top : '-=1250px',
+                left : '-=1250px'
+            }, 2000, function() {
+                n--;
+                hollowCircle.remove();
+            });
+
+            if(n > 12) {
+                circle.remove();    
+                turnWhite();
+            }
         }
-
     })
 }
 
-function turnWhite() {
+function turnWhite() {    
+    var parent = $('#centre-wrapper');
+    parent.append("<div id='background-circle'></div>");    
+    var backgroundCircle = $('#background-circle');
 
+    backgroundCircle.animate({
+        width : '+=2500px',
+        height : '+=2500px',
+        top : '-=1250px',
+        left : '-=1250px'        
+    }, 2000, function() {
+        var body = $('body');
+        body.css('background-color', 'white');
+        backgroundCircle.remove();
+    });
 }

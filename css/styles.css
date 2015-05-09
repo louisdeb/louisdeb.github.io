@@ -6,6 +6,7 @@ body {
     padding: 0;
     overflow-y: hidden;
     overflow-x: hidden;
+    font-family: 'Raleway', sans-serif;
 }
 
 #centre-wrapper {
@@ -16,7 +17,7 @@ body {
     position: absolute;
     margin: 0 auto;
     top: 100%;     
-    left: 50%;   
+    left: 49.1%;   
     width: 40px;
     height: 40px;
     background: white;
@@ -28,8 +29,8 @@ body {
 #background-circle {
     position: absolute;
     margin: 0 auto;
-    top: 100%;     
-    left: 50%;   
+    top: 48.5%;     
+    left: 49.1%;   
     width: 40px;
     height: 40px;
     background: white;
@@ -41,8 +42,8 @@ body {
 .hollow-circle {
     z-index: -1;
     position: absolute;
-    top: 50%;
-    left: 50%;
+    top: 48.5%;
+    left: 49.1%;
     margin: 0 auto;
     width: 35px;
     height: 35px;
@@ -50,4 +51,12 @@ body {
     -webkit-border-radius: 50px;
     border-radius: 50%;
     transform-origin: center;
+}
+
+#sound-message {
+    
+    margin: 25% 0 auto;
+    
+    font-weight: 300;
+    letter-spacing: 2px;
 }
