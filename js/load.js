@@ -1,13 +1,14 @@
 
-$(function() {    
+$(function() {            
     $('#sound-message').delay(1000).fadeOut(1000);        
 
-    setTimeout("slideUpCircle()", 2000);
-    waitForClick();    
+    setTimeout("slideUpCircle()", 2500);
+    waitForClick();        
 })
 
 function slideUpCircle() {
     var circle = $('#circle');  
+    $('#sound-message').remove();
     circle.animate({
         top : '-=51.5%'
     }, 3000, 'easeOutQuint');    
@@ -15,7 +16,7 @@ function slideUpCircle() {
 
 function waitForClick() {    
     var circle = $('#circle');
-    var parent = $('#centre-wrapper');
+    var parent = $('#wrapper');
     var n = 0;    
 
     circle.click(function() { 
@@ -45,7 +46,7 @@ function waitForClick() {
 }
 
 function turnWhite() {    
-    var parent = $('#centre-wrapper');
+    var parent = $('#wrapper');
     parent.append("<div id='background-circle'></div>");    
     var backgroundCircle = $('#background-circle');
 
@@ -58,5 +59,14 @@ function turnWhite() {
         var body = $('body');
         body.css('background-color', 'white');
         backgroundCircle.remove();
+        showFloor();
     });
+}
+
+function showFloor() {
+    var parent = $('#wrapper');
+    parent.append("<div id='floor'></div>");
+    var floor = $('#floor');
+
+    //animate floor
 }
