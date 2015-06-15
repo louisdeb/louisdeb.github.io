@@ -1,0 +1,14 @@
+body {
+  width: 100%;
+  margin: 0;
+  font-family: 'Ek Mukta', sans-serif;
+  overflow-y: hidden;
+	overflow-x: hidden;
+}
+
+a:hover {
+	color: #ed681a;
+}
+
+
+

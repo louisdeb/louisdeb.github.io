@@ -1,0 +1,28 @@
+header {
+	margin: 0 auto;
+	text-align: center;
+}
+
+header a {
+	text-decoration: none;
+	color: inherit;
+}
+
+header div#menu {
+	position: absolute;
+	top: 0;
+	right: 10;
+	word-spacing: 10px;
+}
+
+header div#title {
+	font-size: 64px;
+	font-weight: 800;
+}
+
+header p {
+	margin: 0;
+}
+
+
+
