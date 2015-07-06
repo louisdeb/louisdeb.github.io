@@ -3,8 +3,7 @@ header {
 	text-align: center;
 }
 
-header a {
-	text-decoration: none;
+header a {	
 	color: inherit;
 }
 
@@ -15,14 +14,6 @@ header div#menu {
 	word-spacing: 10px;
 }
 
-header div#title {
-	font-size: 64px;
-	font-weight: 800;
-}
-
 header p {
 	margin: 0;
 }
-
-
-

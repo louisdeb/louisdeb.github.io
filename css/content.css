@@ -1,24 +1,21 @@
-div.column {
-	position: absolute;
-	width: 20%;
-	text-align: center;
-	overflow: auto;
+div#archive {	
+	margin-left: 30px;
 }
 
-div#code {
-	right: 25%;
+div#archive h3, h4 {
+	margin: 0;
 }
 
-div.element {
-	position: relative;
-	width: 80%;
-	height: 205px; /* Instead init this with js and set it to width */
-	background-color: black;
-	margin-bottom: 20px
-}
-	
-div#web {
-	left: 25%;
+div#archive h4, p {
+	margin-left: 10px;
 }
 
+div#content {
+	margin: 0;
+	margin-left: 30px;
+}
+
+div#content h2 {
+	margin: 0;
+}
 
