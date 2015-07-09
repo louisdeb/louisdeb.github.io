@@ -1,0 +1,130 @@
+@charset "utf-8";
+/* CSS Document */
+
+body {
+		width: 100%;
+		height: 100%;
+		background-image: url('assets/background2.jpg');
+		background-repeat: no-repeat;
+		background-position: center center;
+		background-attachment: fixed;
+		text-align:center;
+		overflow: hidden;
+	}
+	
+	#header {
+		left: 10%;
+		position:absolute;
+		width: 100px;
+		height: 30px;
+			margin-left: -50px;			
+		text-align: center;
+		background-color: ;
+		opacity: 0.8;
+		font-size: 70px;
+	}
+	
+	#twyst-logo {
+		position: absolute;
+		left: 50%;
+		margin-left: -140px;
+		height: 250px;
+		
+	}
+	
+	.mainText {
+		margin-top: 4px;
+		font: Helvetica, sans-serif;	
+		font-weight: 700;
+		letter-spacing: 1px;	
+	}
+	
+	#footer {
+		bottom: 8px;
+		position: fixed;
+		left: 50%;
+		height: 55px;
+		width: 900px;
+			margin-left: -450px;
+		background-color: white;
+		opacity: 0.8;	
+	}
+	
+	#left-footer {
+		position: absolute;
+		margin-left: 0px;
+		width: 380px;
+		height: 55px;
+		border-right: thin solid black;	
+	}
+	
+	#right-footer {
+		position: absolute;
+		left: 56%;
+		width: 380px;
+		height: 55px;
+		border-left: thin solid black;	
+	}
+	
+	#right-footer-text {
+		position: absolute;
+		margin-top: 20px;	
+	}
+	
+	#kickstarter-funded {
+		position: absolute;
+		bottom: 0px;
+		margin-bottom: 10px;
+		left: 50%;
+		height: 50px;	
+	}
+	
+	#kickstarter-button {
+		position: absolute;
+		bottom: 0px;
+		margin-bottom: 10px;
+		left: 45%;
+		height: 50px;
+	}
+	
+	a#mouse-over-left span#mouse-over-left {
+		display: none;	
+	}
+	
+	a#mouse-over-left:hover span#mouse-over-left {
+		display: block;
+		position: absolute;
+		width: 500px;
+		left: 50%;
+		margin-left: -250px;
+		bottom: 0px;
+		margin-bottom: 60px;
+		background-color: white;
+		opacity: 0.8;
+	}
+	
+	a#mouse-over-right span#mouse-over-right {
+		display: none;	
+	}
+	
+	a#mouse-over-right:hover span#mouse-over-right {
+		display: block;
+		position: absolute;
+		width: 500px;
+		left: 50%;
+		margin-left: -250px;
+		bottom: 0px;
+		margin-bottom: 60px;
+		background-color: white;
+		opacity: 0.8;	
+	}
+	
+	a:active, a:visited, a:link {
+		text-decoration: underline;
+		color: black;
+	}
+	
+	a:hover {
+		color: #09F;	
+	}
+

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+
+<head>
+	<meta name="language" content="English">  
+    <meta name="description" content="The Website for Team Logyc, a member of the Young Enterprise competition.">
+    <meta name="keywords" content="Team Logyc, Logyc, Young Enterprise, Headphone Winder, Twyst">
+    <meta charset="utf-8">
+    
+	<link rel="stylesheet" type="text/css" href="styles.css">
+        
+	<title>TwystWinder</title>
+    
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script> 
+    <script>
+		$(function(){
+   			$('.fadein img:gt(0)').hide();
+    		setInterval(function(){
+      		$('.fadein :first-child').fadeOut('slow')
+         	.next('img').fadeIn('slow')
+         	.end().appendTo('.fadein');}, 
+      		10000);
+		});
+	</script>
+    
+</head>
+
+<body>
+
+    <div class="fadein">
+ 		<img src="assets/background.jpg">
+  		<img src="assets/background2.jpg">
+        <img src="assets/background3.jpg">
+        <img src="assets/background4.jpg">
+        <img src="assets/background5.jpg">
+        <img src="assets/background6.jpg">
+	</div>
+    
+    
+	<img id="twyst-logo" src="assets/twyst-logo.png">
+    
+    <div id="footer">
+    
+        <div id="right-footer">
+        <p class="mainText"><br/>THE TWYST WINDER IS A PRODUCT OF <br/> <a>TEAM LOGYC</a>.</p>
+        </div>
+        
+    	<div id="left-footer">
+        <p class="mainText">IF YOU'VE GOT ANY QUESTIONS THEN EMAIL US AT <a href="mailto:info@twystwinder.com">INFO@TWYSTWINDER.COM</a></p>  
+        <p class="mainText">ORDERS (10+) TO <a href="mailto:orders@twystwinder.com">ORDERS@TWYSTWINDER.COM</a></p>  
+        </div>
+        
+        <a href="backers.html" id="mouse-over-right">
+	    	<img id="kickstarter-funded" src="assets/kickstarter-funded.png">
+        
+        	<span id="mouse-over-right">
+          	<p class="mainText">
+          		Click here to view the list of people who made the campaign what it was!
+          	</p>
+        	</span>
+   		</a>
+           
+    </div>
+	    
+</body>
+</html>
