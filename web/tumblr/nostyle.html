@@ -1,0 +1,119 @@
+<xmp>
+<!DOCTYPE html>
+<html>
+    <head>
+        
+        <title>{Title}</title>
+        
+        <style>
+            body {
+                margin-right: 10px;
+                width: 40%;
+            }
+            
+            #posts {
+                margin-top: 40px;
+            }
+            
+            .block {
+                margin-bottom: 60px;    
+            }
+            
+            {CustomCSS}
+        </style>
+        
+    </head>
+    
+    <body>
+    
+        <h1>{Title}</h1>
+        <h3>{Description}</h3>
+        
+        <div id="posts">
+        {block:Posts}
+            <div class="block">
+            {block:Text}
+                {block:Title}
+                    <h4><a href="{Permalink}">{Title}</a></h4>
+                {/block:Title}
+                {Body}
+            {/block:Text}
+            </div>
+            
+            <div class="block">    
+            {block:Photo}
+                {block:Caption}
+                    <div class="caption">{Caption}</div>
+                {/block:Caption}
+                <img src="{PhotoURL-500}" alt="{PhotoAlt}"/>
+            {/block:Photo}
+            </div>
+                
+            <div class="block">
+            {block:Photoset}
+                {Photoset-500}
+                {block:Caption}
+                    <div class="caption">{Caption}</div>
+                {/block:Caption}
+            {/block:Photoset}
+            </div>
+            
+            <div class="block">    
+            {block:Quote}
+                "{Quote}"
+                {block:Source}
+                    <div class="source">-- {Source}</div>
+                {/block:Source}
+            {/block:Quote}
+            </div>
+                
+            <div class="block">
+            {block:Link}
+                <h4><a href="{URL}" class="link" {Target}>{Name}</a></h4>
+                {block:Description}
+                    <div class="description">{Description}</div>
+                {/block:Description}
+            {/block:Link}
+            </div>
+                
+            <div class="block">
+            {block:Chat}
+                {block:Title}
+                    <h4><a href="{Permalink}">{Title}</a></h4>
+                {/block:Title}
+                <ul>
+                    {block:Lines}
+                        <li class="{Alt} user_{UserNumber}">
+                            {block:Label}
+                                <span class="label">{Label}</span>
+                            {/block:Label}
+                            {Line}
+                        </li>
+                    {/block:Lines}
+                </ul>
+            {/block:Chat}
+            </div>
+                
+            <div class="block">
+            {block:Video}
+                {Video-500}
+                {block:Caption}
+                    <div class="caption">{Caption}</div>
+                {/block:Caption}
+            {/block:Video}
+            </div>
+                
+            <div class="block">
+            {block:Audio}
+                {AudioPlayerBlack}
+                {block:Caption}
+                    <div class="caption">{Caption}</div>
+                {/block:Caption}
+            {/block:Audio}
+            </div>
+        {/block:Posts}
+        </div>
+
+    </body>
+</html>
+</xmp>
