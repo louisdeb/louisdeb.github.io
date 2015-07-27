@@ -123,13 +123,7 @@
             {block:Date}
                 <samp>
                     <div>
-                        <a href="{Permalink}">
-                            {TimeAgo}
-                            {block:NoteCount}
-                                with
-                                {NoteCountWithLabel}
-                            {/block:NoteCount}
-                        </a>
+                        <a href="{Permalink}">{TimeAgo}{block:NoteCount} with {NoteCountWithLabel}{/block:NoteCount}</a>
                         
                         {block:ContentSource}
                             from
