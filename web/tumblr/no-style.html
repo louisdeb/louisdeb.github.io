@@ -10,12 +10,21 @@
                 width: 40%;
             }
             
-            #posts {
+            #home {
+                color: inherit;
+            }
+            
+            #home:hover {
+                color: blue;
+            }
+            
+            .posts {
                 margin-top: 40px;
+                margin-bottom: 60px;
             }
             
             .block {
-                margin-bottom: 60px;    
+                margin-bottom: 60px;
             }
             
             {CustomCSS}
@@ -25,10 +34,10 @@
     
     <body>
     
-        <h1>{Title}</h1>
+        <a id="home" href="{BlogURL}"><h1>{Title}</h1></a>
         <h3>{Description}</h3>
         
-        <div id="posts">
+        <div class="posts">
         {block:Posts}
             <div class="block">
             {block:Text}
@@ -37,45 +46,35 @@
                 {/block:Title}
                 {Body}
             {/block:Text}
-            </div>
             
-            <div class="block">    
             {block:Photo}
                 {block:Caption}
                     <div class="caption">{Caption}</div>
                 {/block:Caption}
-                <img src="{PhotoURL-500}" alt="{PhotoAlt}"/>
+                <div><img src="{PhotoURL-500}" alt="{PhotoAlt}"/></div>
             {/block:Photo}
-            </div>
                 
-            <div class="block">
             {block:Photoset}
                 {Photoset-500}
                 {block:Caption}
                     <div class="caption">{Caption}</div>
                 {/block:Caption}
             {/block:Photoset}
-            </div>
-            
-            <div class="block">    
+
             {block:Quote}
                 "{Quote}"
                 {block:Source}
                     <div class="source">-- {Source}</div>
                 {/block:Source}
             {/block:Quote}
-            </div>
-                
-            <div class="block">
+
             {block:Link}
                 <h4><a href="{URL}" class="link" {Target}>{Name}</a></h4>
                 {block:Description}
                     <div class="description">{Description}</div>
                 {/block:Description}
             {/block:Link}
-            </div>
-                
-            <div class="block">
+
             {block:Chat}
                 {block:Title}
                     <h4><a href="{Permalink}">{Title}</a></h4>
@@ -91,27 +90,68 @@
                     {/block:Lines}
                 </ul>
             {/block:Chat}
-            </div>
-                
-            <div class="block">
+
             {block:Video}
                 {Video-500}
                 {block:Caption}
                     <div class="caption">{Caption}</div>
                 {/block:Caption}
             {/block:Video}
-            </div>
-                
-            <div class="block">
+
             {block:Audio}
                 {AudioPlayerBlack}
                 {block:Caption}
                     <div class="caption">{Caption}</div>
                 {/block:Caption}
             {/block:Audio}
+            
+            
+            {block:Date}
+                <samp>
+                    <div>
+                        <a href="{Permalink}">
+                            {TimeAgo}
+                            {block:NoteCount}
+                                with
+                                {NoteCountWithLabel}
+                            {/block:NoteCount}
+                        </a>
+                        
+                        {block:ContentSource}
+                            from
+                            <a href="{SourceURL}">
+                                {SourceTitle}
+                            </a>
+                        {/block:ContentSource}
+                    </div>
+                    
+                    {block:PermalinkPage}
+                        {block:HasTags}
+                            {block:Tags}
+                                <a href="{TagURL}">{Tag}</a>
+                            {/block:Tags}
+                        {/block:HasTags}
+                        
+                        {block:PostNotes}
+                            {PostNotes}
+                        {/block:PostNotes} 
+                    {/block:PermalinkPage}
+                    
+                </samp>
+            {/block:Date}
+                
             </div>
         {/block:Posts}
         </div>
+        
+        {block:Pagination}
+            {block:NextPage}
+                <a href="{NextPage}">Next page</a>
+            {/block:NextPage}
+            {block:PreviousPage}
+                <a href="{PreviousPage}">Previous page</a>
+            {/block:PreviousPage}
+        {/block:Pagination}
 
     </body>
 </html>
