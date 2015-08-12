@@ -1,0 +1,24 @@
+header {
+  position: fixed;
+}
+
+#menu-img {
+  display: none;
+}
+
+#menu {
+  display: inline-block;
+  float: right;
+  height: 50px;
+  margin-right: 75px;
+}
+
+#menu ul li {
+  border-right: solid black 1px;
+  display: inline;
+  line-height: 50px;
+  height: 50px; /* TODO: make border-right full height */
+  text-align: center;
+  padding-right: 25px;
+  padding-left: 25px;
+}
