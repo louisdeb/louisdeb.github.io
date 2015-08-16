@@ -43,7 +43,6 @@
 #content {
   background-color: rgba(255, 255, 255, 0.17);
   float: left;
-  height: 900px;
   margin-bottom: 50px;
   margin-left: 75px;
   margin-top: 50px;
@@ -117,16 +116,50 @@
   padding-left: 25px;
 }
 
-.read-more {
-  color: rgb(255, 70, 70);
+.read-more, .username {
+  color: white;
   font-family: Consolas, Monaco, Courier New;
+  font-style: normal;
 }
 
 #sidebar {
   background-color: rgba(255, 255, 255, 0.18);
   float: right;
-  height: 400px;
+  height: 380px;
   margin-right: 75px;
   margin-top: 50px;
   width: 300px;
+}
+
+.sidebar-collaboration {
+  background-color: rgba(255, 255, 255, 0.1);
+  height: 80px;
+  margin-left: 5px;
+  margin-right: 5px;
+  width: 290px;
+}
+
+.sidebar-collaboration h3 {
+  color: #ccc;
+  font-size: 1.4em;
+  margin-bottom: 0px;
+  padding-left: 5px;
+  padding-top: 5px;
+}
+
+.sidebar-collaboration p {
+  color: #999;
+  float: right;
+  font-style: italic;
+  margin-top: 0px;
+}
+
+#sidebar-title {
+  color: #ccc;
+  font-size: 0.8em;
+  margin-left: 10px;
+}
+
+.username {
+  color: inherit;
 }

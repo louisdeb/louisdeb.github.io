@@ -28,12 +28,12 @@ header {
   z-index: 3;
 }
 
-header a, #featured a {
+a {
   text-decoration: none;
   color: inherit;
 }
 
-header a:hover, #featured-tag a:hover {
+a:hover {
   color: #fff;
 }
 
