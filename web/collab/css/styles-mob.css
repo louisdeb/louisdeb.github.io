@@ -1,3 +1,8 @@
+
+#featured {
+  display: none;
+}
+
 #menu-img img {
   display: block;
   float: left;
