@@ -1,5 +1,75 @@
+.article {
+  background-image: url('../images/testimg.jpg');
+  background-size: 100%;
+  height: 300px;
+  margin: 0 auto;
+  margin-bottom: 50px;
+  margin-left: 10px;
+  margin-right: 10px;
+  overflow: auto;
+  width: 780px;
+}
+
+.article-summary {
+  margin-left: 20px;
+  width: 600px;
+}
+
+.article-summary p {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #ddd;
+  line-height: 22px;
+  padding-bottom: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 5px;
+}
+
+.article-title {
+  margin-top: 20px;
+  margin-left: 20px;
+  width: 300px;
+}
+
+.article-title h2 {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #ddd;
+  font-size: 2em;
+  line-height: 50px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+#content {
+  background-color: rgba(255, 255, 255, 0.17);
+  float: left;
+  height: 900px;
+  margin-bottom: 50px;
+  margin-left: 75px;
+  margin-top: 50px;
+  width: 800px;
+}
+
+#content-title h1 {
+  color: #ccc;
+  font-size: 2.5em;
+  margin-bottom: 0px;
+  margin-left: 20px;
+}
+
+#content-title h3 {
+  color: #aaa;
+  font-size: 1em;
+  font-style: italic;
+  font-weight: 400;
+  margin-left: 25px;
+  margin-top: 5px;
+}
+
 #featured {
   background-color: rgba(255, 255, 255, 0.7);
+  background-image: url('../images/testimg.jpg');
+  background-size: 100%;
   display: block;
   height: 300px;
   position: relative;
@@ -21,6 +91,9 @@
   font-family: Consolas, Monaco, Courier New;
   font-size: 16px;
   margin: 0;
+  padding-left: 3px;
+  padding-right: 3px;
+  padding-top: 2px;
 }
 
 #menu-img {
@@ -42,4 +115,18 @@
   text-align: center;
   padding-right: 25px;
   padding-left: 25px;
+}
+
+.read-more {
+  color: rgb(255, 70, 70);
+  font-family: Consolas, Monaco, Courier New;
+}
+
+#sidebar {
+  background-color: rgba(255, 255, 255, 0.18);
+  float: right;
+  height: 400px;
+  margin-right: 75px;
+  margin-top: 50px;
+  width: 300px;
 }
