@@ -1,27 +1,27 @@
 
-$(function() {            
-    $('#sound-message').delay(1000).fadeOut(1000);        
+$(function() {
+    $('#sound-message').delay(1000).fadeOut(1000);
 
     setTimeout("slideUpCircle()", 2500);
-    waitForClick();        
+    waitForClick();
 })
 
 function slideUpCircle() {
-    var circle = $('#circle');  
+    var circle = $('#circle');
     $('#sound-message').remove();
     circle.animate({
         top : '-=51.5%'
-    }, 3000, 'easeOutQuint');    
+    }, 3000, 'easeOutQuint');
 }
 
-function waitForClick() {    
+function waitForClick() {
     var circle = $('#circle');
     var parent = $('#wrapper');
-    var n = 0;    
+    var n = 0;
 
-    circle.click(function() { 
+    circle.click(function() {
 
-        if(!circle.is(':animated')) {           
+        if(!circle.is(':animated')) {
 
             parent.append("<div class='hollow-circle'></div>");
             var hollowCircle = $(".hollow-circle");
@@ -38,23 +38,23 @@ function waitForClick() {
             });
 
             if(n > 12) {
-                circle.remove();    
+                circle.remove();
                 turnWhite();
             }
         }
     })
 }
 
-function turnWhite() {    
+function turnWhite() {
     var parent = $('#wrapper');
-    parent.append("<div id='background-circle'></div>");    
+    parent.append("<div id='background-circle'></div>");
     var backgroundCircle = $('#background-circle');
 
     backgroundCircle.animate({
         width : '+=2500px',
         height : '+=2500px',
         top : '-=1250px',
-        left : '-=1250px'        
+        left : '-=1250px'
     }, 2000, function() {
         var body = $('body');
         body.css('background-color', 'white');

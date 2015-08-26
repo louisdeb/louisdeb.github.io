@@ -88,11 +88,73 @@
 
 #featured-tag p {
   font-family: Consolas, Monaco, Courier New;
-  font-size: 16px;
+  font-size: 12px;
   margin: 0;
   padding-left: 3px;
   padding-right: 3px;
   padding-top: 2px;
+}
+
+#log-sign {
+  bottom: 0;
+  height: 100px;
+  left: 0;
+  margin: auto;
+  position: absolute;
+  right: 0;
+  text-align: center;
+  top: 0;
+  width: 300px;
+}
+
+#log-sign input[type=text], #log-sign input[type=password] {
+  font-size: 16px;
+  height: 25px;
+  margin-bottom: 5px;
+  width: 200px;
+}
+
+#log-sign p {
+  margin: 0;
+}
+
+#log-sign input[type=submit] {
+  font-size: 16px;
+  height: 25px;
+  margin-left: 115px;
+  margin-top: 10px;
+  width: 100px;
+}
+
+#log-sign-container {
+  background-color: black;
+  color: #ccc;
+  display: none;
+  float: left;
+  height: 100%;
+  position: fixed;
+  width: 100%;
+  z-index: 10;
+}
+
+#log-sign-exit {
+  margin-right: 150px;
+  margin-top: 40px;
+  position: absolute;
+  right: 0;
+}
+
+#log-sign-header {
+  bottom: 0;
+  font-size: 1.5em;
+  height: 350px;
+  left: 0;
+  margin: auto;
+  position: absolute;
+  right: 0;
+  text-align: center;
+  top: 0;
+  width: 600px;
 }
 
 #menu-img {
