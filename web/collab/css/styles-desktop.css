@@ -178,10 +178,16 @@
   padding-left: 25px;
 }
 
-.read-more, .username {
+.read-more {
+  background-color: rgba(0, 0, 0, 0.5);
   color: white;
-  font-family: Consolas, Monaco, Courier New;
-  font-style: normal;
+  float: right;
+  height: 25px;
+  line-height: 25px;
+  margin-right: 5px;
+  margin-top: -40px;
+  text-align: center;
+  width: 95px;
 }
 
 #sidebar {
@@ -223,5 +229,7 @@
 }
 
 .username {
-  color: inherit;
+  color: white;
+  font-family: Consolas, Monaco, Courier New;
+  font-style: normal;
 }
