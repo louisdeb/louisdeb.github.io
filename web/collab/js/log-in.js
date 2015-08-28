@@ -16,6 +16,8 @@ $(function() {
   //Log Sign exit button listener
   $('#log-sign-exit').click(function() {
     $('#log-sign-container').fadeOut();
+    $('#username-input').prop('value', '');
+    $('#password-input').prop('value', '');
   });
 
 });
