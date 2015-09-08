@@ -4,9 +4,13 @@ $(function() {
   //nav-home listener
   $('#nav-home').click(function() {
     console.log('nav-home click');
+    $('body').css('overflow', 'visible');
+    $('.section').fadeOut();
     setTimeout(function() {
-      $('.section').css('display', 'none');
+      $('#home').fadeIn();
+      $('body').css('overflow', 'hidden');
     }, 500); //Delay stops jumping to home immediately
+
   });
 
   //nav-portfolio listener
@@ -26,16 +30,13 @@ $(function() {
     console.log('nav-contact click');
     showSection('#contact');
   });
-
-  //TODO: make any visible .section invisible when user scrolls back to title screen.
-  //TODO: or don't allow user to scroll back to title screen
-
 });
 
 function showSection(sectionName) {
   $('body').css('overflow', 'visible');
   $(sectionName).css('display', 'block');
   setTimeout(function() {
+    $('#home').css('display', 'none');
     $('body').css('overflow', 'hidden');
   }, 500);
 }
