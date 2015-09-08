@@ -8,6 +8,24 @@ font-family: Adamas;
 src: url('Adamas-Regular.otf') format('opentype');
 }
 
+#about-left {
+  margin-left: 300px;
+  float: left;
+  text-align: left;
+  width: 400px;
+}
+
+#about-right {
+  margin-right: 300px;
+  float: right;
+  text-align: right;
+}
+
+#about-right img {
+  height: 150px;
+  width: 150px;
+}
+
 body {
   background-color: #FECB32;
   font-family: Track;
@@ -16,9 +34,18 @@ body {
   overflow: hidden;
 }
 
+.content {
+  color: #ccc;
+}
+
+.content a {
+  color: #fff;
+  text-decoration: none;
+}
+
 .container {
   bottom: 0;
-  height: 200px;
+  height: 100%;
   left: 0;
   margin: 0 auto;
   position: absolute;
@@ -33,6 +60,7 @@ body {
   font-size: 8em;
   line-height: 200px;
   margin: 0 auto;
+  margin-bottom: 50px;
 }
 
 header {
