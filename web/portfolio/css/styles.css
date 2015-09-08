@@ -36,6 +36,7 @@ body {
 
 .content {
   color: #ccc;
+  line-height: 16px;
 }
 
 .content a {
@@ -68,7 +69,7 @@ header {
   height: 100%;
   margin: 0 auto;
   padding-bottom: 1px;
-  z-index: 5;
+  z-index: 0;
 }
 
 #home-arrow {
@@ -77,7 +78,7 @@ header {
   margin: 0;
   position: fixed;
   top: 0;
-  z-index: 11;
+  z-index: 2;
 }
 
 #home-arrow a {
@@ -126,7 +127,7 @@ html {
   margin: 0 auto;
   padding-bottom: 1px;
   position: relative;
-  z-index: 0;
+  z-index: 1;
 }
 
 #title {
