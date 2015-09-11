@@ -8,30 +8,30 @@ font-family: Adamas;
 src: url('Adamas-Regular.otf') format('opentype');
 }
 
-#about-left {
-  margin-left: 300px;
-  float: left;
-  text-align: left;
-  width: 400px;
-}
-
-#about-right {
-  margin-right: 300px;
-  float: right;
-  text-align: right;
-}
-
-#about-right img {
-  height: 150px;
-  width: 150px;
-}
-
 body {
   background-color: #FECB32;
   font-family: Track;
   height: 100%;
   margin: 0 auto;
   overflow: hidden;
+}
+
+.col-left {
+  margin-left: 300px;
+  float: left;
+  text-align: left;
+  width: 400px;
+}
+
+.col-right {
+  margin-right: 300px;
+  float: right;
+  text-align: right;
+}
+
+.col-right img {
+  height: 150px;
+  width: 150px;
 }
 
 .content {
@@ -117,6 +117,78 @@ html {
   line-height: 100px;
   margin-left: 50px;
   margin-right: 50px;
+}
+
+#portfolio #next-arrow {
+  margin-right: 60px;
+  right: 0;
+}
+
+#portfolio #prev-arrow {
+  left: 0;
+  margin-left: 60px;
+}
+
+#portfolio #next-arrow, #portfolio #prev-arrow {
+  bottom: 0;
+  font-size: 0.9em;
+  margin-bottom: 20px;
+  position: absolute;
+}
+
+#portfolio #next-arrow h1, #portfolio #prev-arrow h1 {
+  margin: 0;
+  color: #FECB32;
+}
+
+#portfolio #next-arrow a, #portfolio #prev-arrow a {
+  margin: 0;
+  text-decoration: none;
+}
+
+.project {
+  height: 450px;
+  margin: 0 auto;
+  margin-top: -50px;
+  width: 920px;
+}
+
+.project img {
+  height: 320px;
+  margin: 0 auto;
+  margin-bottom: 10px;
+  width: 920px;
+}
+
+.project .description {
+  float: right;
+  font-size: 0.9em;
+  margin: 0;
+  text-align: left;
+  width: 690px;
+}
+
+.project .description p {
+  margin-top: 0;
+}
+
+.project .title {
+  border-right: 1px solid #ccc;
+  float: left;
+  height: 130px;
+  text-align: left;
+  width: 220px;
+}
+
+.project .title h2 {
+  font-weight: 200;
+  line-height: 30px;
+  margin: 0;
+}
+
+.project .title p {
+  font-size: 0.8em;
+  margin-top: 50px;
 }
 
 .section {

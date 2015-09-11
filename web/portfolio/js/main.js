@@ -17,6 +17,9 @@ $(function() {
   $('#nav-portfolio').click(function() {
     console.log('nav-portfolio click');
     showSection('#portfolio');
+    setTimeout(function() {
+      $('#next-arrow').fadeIn();
+    }, 500);
   });
 
   //nav-about listener
