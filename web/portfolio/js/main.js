@@ -56,6 +56,24 @@ $(function() {
     showProject(currentProjectIndex, true);
     currentProjectIndex == 0 && $('#prev-arrow').fadeOut();
   });
+
+  $('html').keypress(function(e) {
+    //39 is right
+    //37 is left
+    if($('#portfolio').is(':visible')) {
+      if(e.keyCode == 39) {
+        $('#next-arrow').click();
+      } else if(e.keyCode == 37) {
+        $('#prev-arrow').click();
+      }
+    }
+
+    if(!$('#home').is(':visible')) {
+      if(e.keyCode == 38) {
+        $('#nav-home').click();
+      }
+    }
+  });
 });
 
 function showSection(sectionName) {
