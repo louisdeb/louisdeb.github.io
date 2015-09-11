@@ -74,6 +74,22 @@ $(function() {
       }
     }
   });
+
+  $('html').swipe(function() {
+    if($('#portfolio').is(':visible')) {
+      if(swipe.direction == 'left') {
+        $('#next-arrow').click();
+      } else if(swipe.direction == 'right') {
+        $('#prev-arrow').click();
+      }
+    }
+
+    if(!$('home').is(':visible')) {
+      if(swipe.direction == 'up') {
+        $('#nav-home').click();
+      }
+    }
+  });
 });
 
 function showSection(sectionName) {
