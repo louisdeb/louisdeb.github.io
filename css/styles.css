@@ -13,7 +13,6 @@ body {
   font-family: Track;
   height: 100%;
   margin: 0 auto;
-  overflow: hidden;
 }
 
 .col-left {
@@ -68,7 +67,6 @@ header {
   background-color: #FECB32;
   height: 100%;
   margin: 0 auto;
-  padding-bottom: 1px;
   z-index: 0;
 }
 
@@ -170,12 +168,15 @@ html {
 .project .description {
   float: right;
   font-size: 0.9em;
+  max-height: 130px;
   margin: 0;
+  overflow: scroll;
   text-align: left;
   width: 690px;
 }
 
 .project .description p {
+  line-height: 18px;
   margin-top: 0;
 }
 
@@ -204,7 +205,6 @@ html {
   display: none;
   height: 100%;
   margin: 0 auto;
-  padding-bottom: 1px;
   position: relative;
   z-index: 1;
 }

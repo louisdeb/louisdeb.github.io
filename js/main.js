@@ -68,7 +68,11 @@ $(function() {
       }
     }
 
-    if(!$('#home').is(':visible')) {
+    if($('#home').is(':visible')) {
+      if(e.keyCode == 40) {
+        $('#nav-portfolio').click();
+      }
+    } else {
       if(e.keyCode == 38) {
         $('#nav-home').click();
       }
