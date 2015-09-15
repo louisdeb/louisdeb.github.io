@@ -1,0 +1,98 @@
+@font-face {
+  font-family: 'Accidental';
+  src: url('AccidentalPresidency.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Cabin';
+  src: url('Cabin-reg.ttf') format('truetype');
+}
+
+body {
+  height: 100%;
+  margin: 0;
+}
+
+#content {
+  float: left;
+  background-color: #fff;
+  height: 100%;
+  margin: 0;
+  width: 100%;
+}
+
+header {
+  background-color: #eee;
+  font-family: 'Cabin';
+  height: 50px;
+  letter-spacing: 3px;
+  padding-top: 10px;
+  position: fixed;
+  width: 100%;
+}
+
+header a, #sidebar a {
+  color: inherit;
+  text-decoration: none;
+}
+
+header a:hover, #sidebar a:hover {
+  text-decoration: underline;
+}
+
+header ul {
+  float: left;
+  font-size: 1.2em;
+  height: 40px;
+  margin: 0;
+  margin-left: 300px;
+  min-width: 400px;
+  padding: 0;
+  position: fixed;
+}
+
+header ul li {
+  display: inline-block;
+  text-align: center;
+  margin-top: 12px;
+  margin-right: 20px;
+  text-align: center;
+}
+
+h1 {
+  float: left;
+  font-size: 2em;
+  height: 40px;
+  margin: 0;
+  margin-left: 20px;
+  margin-right: 50px;
+}
+
+html {
+  height: 100%;
+}
+
+#sidebar {
+  background-color: #eee;
+  float: left;
+  font-family: 'Cabin';
+  height: 100%;
+  letter-spacing: 1px;
+  margin-top: 50px;
+  position: fixed;
+  width: 150px;
+}
+
+#sidebar ul {
+  font-size: 1.2em;
+  padding-left: 0px;
+  margin: 0;
+  margin-left: 10px;
+  margin-top: 10px;
+  padding: 10px;
+  list-style: none;
+}
+
+#sidebar ul li {
+  margin-bottom: 10px;
+}
