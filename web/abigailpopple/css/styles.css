@@ -1,3 +1,7 @@
+:root {
+  --wrapper-color: #fff;
+}
+
 @font-face {
   font-family: 'Accidental';
   src: url('AccidentalPresidency.ttf') format('truetype');
@@ -9,35 +13,66 @@
 }
 
 body {
-  height: 100%;
-  margin: 0;
-}
-
-#content {
-  float: left;
-  background-color: #fff;
+  font-family: 'Cabin';
   height: 100%;
   margin: 0;
   width: 100%;
 }
 
+#container {
+  float: left;
+  background-color: #fff;
+  max-height: 100%;
+  margin-top: 50px;
+  margin-left: 150px;
+  width: auto;
+}
+
+#content {
+  margin: 0;
+  margin-top: 50px;
+  margin-left: 50px;
+  max-height: 500px;
+  white-space: nowrap;
+
+  overflow-x: visible;
+}
+
+#content img {
+  display: inline-block;
+  margin-right: 50px;
+  max-height: 500px;
+  width: auto;
+  vertical-align: middle;
+  /*border: 1px solid black;*/
+}
+
 header {
-  background-color: #eee;
-  font-family: 'Cabin';
+  background-color: var(--wrapper-color);
   height: 50px;
   letter-spacing: 3px;
   padding-top: 10px;
   position: fixed;
   width: 100%;
+  z-index: 1;
 }
 
-header a, #sidebar a {
+header a, #sidebar a, #signature a, #home a {
   color: inherit;
   text-decoration: none;
 }
 
-header a:hover, #sidebar a:hover {
+header a:hover, #sidebar a:hover, #signature a:hover, #home a:hover {
   text-decoration: underline;
+}
+
+header h1 {
+  float: left;
+  font-size: 2em;
+  height: 40px;
+  margin: 0;
+  margin-left: 20px;
+  margin-right: 50px;
 }
 
 header ul {
@@ -59,23 +94,17 @@ header ul li {
   text-align: center;
 }
 
-h1 {
-  float: left;
-  font-size: 2em;
-  height: 40px;
-  margin: 0;
-  margin-left: 20px;
-  margin-right: 50px;
-}
-
 html {
   height: 100%;
 }
 
+#main {
+  display: none;
+}
+
 #sidebar {
-  background-color: #eee;
+  background-color: var(--wrapper-color);
   float: left;
-  font-family: 'Cabin';
   height: 100%;
   letter-spacing: 1px;
   margin-top: 50px;
@@ -95,4 +124,60 @@ html {
 
 #sidebar ul li {
   margin-bottom: 10px;
+}
+
+#signature {
+  display: none;
+
+  bottom: 0;
+  color: #999;
+  font-size: 10px;
+  right: 0;
+  margin-bottom: 10px;
+  margin-right: 5px;
+  position: absolute;
+}
+
+#signature p {
+  margin: 0;
+}
+
+/* HOME CSS */
+
+#home {
+  bottom: 0;
+  display: block;
+  height: 130px;
+  left: 0;
+  margin: auto;
+  position: absolute;
+  right: 0;
+  text-align: center;
+  top: 0;
+  width: 400px;
+}
+
+#home h1 {
+  margin: 10px;
+}
+
+#home h2 {
+  margin: 5px;
+}
+
+#home h3 {
+  margin: 10px;
+}
+
+#home ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+#home ul li {
+  display: inline-block;
+  margin: 0;
+  margin-left: 20px;
+  margin-right: 20px;
 }
