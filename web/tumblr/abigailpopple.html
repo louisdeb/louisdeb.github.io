@@ -2,8 +2,8 @@
 <html>
 
 <head>
-  <link href='css/styles.css' rel='stylesheet' type='text/css'>
   <link href='https://fonts.googleapis.com/css?family=Cabin' rel='stylesheet' type='text/css'>
+  <title>{Title}</title>
   <style>
   :root {
     --wrapper-color: #fff;
@@ -188,17 +188,21 @@
     margin-left: 20px;
     margin-right: 20px;
   }
+
+  {CustomCSS}
   </style>
 </head>
 
 <body>
   <header>
-    <h1><a href='#'>Abigail Popple</a></h1>
+    <h1><a href='{BlogURL}'>Abigail Popple</a></h1>
 
     <ul>
-      <li><a href='#'>Art</a></li>
-      <li><a href='#'>Illustrations</a></li>
-      <li><a href='#'>Projects</a></li>
+    {block:HasPages}
+      {block:Pages}
+        <li><a href="{URL}">{Label}</a></li>
+      {/block:Pages}
+    {/block:HasPages}
     </ul>
   </header>
 
@@ -212,10 +216,11 @@
 
   <div id='container'>
     <div id='content'>
-      <img src='res/img1.png'>
-      <img src='res/img2.png'>
-      <img src='res/img3.png'>
-      <img src='res/img4.png'>
+      {block:Posts}
+      <div class='post'>
+
+      </div>
+      {/block:Posts}
     </div>
   </div>
 
