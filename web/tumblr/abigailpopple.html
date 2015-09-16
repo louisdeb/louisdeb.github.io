@@ -5,20 +5,6 @@
   <link href='https://fonts.googleapis.com/css?family=Cabin' rel='stylesheet' type='text/css'>
   <title>{Title}</title>
   <style>
-  :root {
-    --wrapper-color: #fff;
-  }
-
-  @font-face {
-    font-family: 'Accidental';
-    src: url('AccidentalPresidency.ttf') format('truetype');
-  }
-
-  @font-face {
-    font-family: 'Cabin';
-    src: url('Cabin-reg.ttf') format('truetype');
-  }
-
   body {
     font-family: 'Cabin';
     height: 100%;
@@ -37,25 +23,26 @@
 
   #content {
     margin: 0;
-    margin-top: 50px;
-    margin-left: 50px;
-    max-height: 500px;
+    margin-left: 20px;
+    margin-top: 20px;
     white-space: nowrap;
-
     overflow-x: visible;
   }
 
-  #content img {
+  #content .post {
     display: inline-block;
     margin-right: 50px;
-    max-height: 500px;
-    width: auto;
     vertical-align: middle;
-    /*border: 1px solid black;*/
+  }
+
+  #content .post img {
+    max-height: 500px;
+    vertical-align: middle;
+    width: auto;
   }
 
   header {
-    background-color: var(--wrapper-color);
+    background-color: #fff;
     height: 50px;
     letter-spacing: 3px;
     padding-top: 10px;
@@ -110,7 +97,7 @@
   }
 
   #sidebar {
-    background-color: var(--wrapper-color);
+    background-color: #fff;
     float: left;
     height: 100%;
     letter-spacing: 1px;
@@ -189,6 +176,12 @@
     margin-right: 20px;
   }
 
+  .version_o_pill animated {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+  }
+
   {CustomCSS}
   </style>
 </head>
@@ -218,7 +211,9 @@
     <div id='content'>
       {block:Posts}
       <div class='post'>
-
+        {block:Photo}
+          <a href='{PhotoURL-HighRes}'><img src="{PhotoURL-HighRes}" alt="{PhotoAlt}"/></a>
+        {/block:Photo}
       </div>
       {/block:Posts}
     </div>
