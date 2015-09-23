@@ -1,0 +1,118 @@
+#about {
+  overflow-y: scroll;
+}
+
+body {
+  overflow: scroll;
+}
+
+.col-left {
+  float: none;
+  margin-bottom: 80px;
+  margin-left: 10px;
+  width: 90%;
+}
+
+.col-right {
+  float: none;
+  margin-right: 10px;
+  width: 90%;
+}
+
+#contact h1 {
+  font-size: 3.4em;
+}
+
+.container h1 {
+  line-height: 100px;
+  font-size: 4.5em;
+}
+
+#navigation {
+  bottom: 1;
+  margin: auto;
+  margin-bottom: 50px;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+#navigation a {
+  margin: 0;
+}
+
+#navigation h2 {
+  display: block;
+  height: 0px;
+  margin: 0;
+  margin-top: -50px;
+  margin-bottom: 100px;
+}
+
+#portfolio {
+  font-size: 0.6em;
+}
+
+#portfolio #next-arrow {
+  right: 0;
+  bottom: 0;
+  font-size: 2em;
+  height: 80px;
+  margin: 0;
+  z-index: 1;
+}
+
+#portfolio #prev-arrow {
+  left: 0;
+  bottom: 0;
+  font-size: 2em;
+  height: 80px;
+  margin: 0;
+  z-index: 1;
+}
+
+.project {
+  margin-left: 5px;
+  margin-top: -20px;
+  position: relative;
+  width: 100%;
+}
+
+.project .description {
+  float: none;
+  font-size: 1.2em;
+  margin-top: 10px;
+  max-height: 240px;
+  overflow: scroll;
+  width: 80%;
+}
+
+.project img {
+  display: none;
+}
+
+.project .title {
+  border-right: none;
+  border-bottom: 1px solid #ccc;
+  float: none;
+  font-size: 2em;
+  height: auto;
+  width: 280px;
+}
+
+#title {
+  height: 450px;
+  text-align: center;
+  width: 100%;
+}
+
+#title img {
+  float: none;
+  height: 150px;
+  width: 150px;
+}
+
+#title h1 {
+  margin-top: 10px;
+  height: 150px;
+}

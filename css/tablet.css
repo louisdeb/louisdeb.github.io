@@ -1,0 +1,23 @@
+#about h1 {
+  font-size: 6em;
+  margin-top: 30px;
+}
+
+#portfolio h1 {
+  font-size: 10em;
+  margin-top: 30px;
+}
+
+#next-arrow, #prev-arrow {
+  margin-bottom: 40px;
+}
+
+#next-arrow h1, #prev-arrow h1 {
+  font-size: 6em;
+}
+
+.project img {
+  display: block;
+  height: auto;
+  width: 100%;
+}
