@@ -4,7 +4,23 @@
 <head>
   <title>{Title}</title>
   <link href='https://fonts.googleapis.com/css?family=Cabin' rel='stylesheet' type='text/css'>
-  <script type='text/javascript' src='http://codysherman.com/tools/infinite-scrolling/code'></script>
+  <script id='infinite-scroll-script' type='text/javascript' src='http://codysherman.com/tools/infinite-scrolling/code'></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  <script>
+
+  $(function() {
+    $('#content').css('display', 'none');
+    setTimeout(function() {
+      if(window.location.pathname == '/') {
+        $('#content').empty();
+        $('#content').load('http://louisdeb-abigailpopple.tumblr.com/tagged/featured #content', $('#content').fadeIn());
+      } else {
+        $('#content').fadeIn();
+      }
+    }, 1000);
+  });
+
+  </script>
   <style>
   body {
     font-family: 'Cabin';
