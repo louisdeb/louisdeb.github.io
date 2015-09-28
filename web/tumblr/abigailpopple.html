@@ -2,8 +2,9 @@
 <html>
 
 <head>
-  <link href='https://fonts.googleapis.com/css?family=Cabin' rel='stylesheet' type='text/css'>
   <title>{Title}</title>
+  <link href='https://fonts.googleapis.com/css?family=Cabin' rel='stylesheet' type='text/css'>
+  <script type='text/javascript' src='http://codysherman.com/tools/infinite-scrolling/code'></script>
   <style>
   body {
     font-family: 'Cabin';
@@ -15,16 +16,18 @@
   #container {
     float: left;
     background-color: #fff;
-    max-height: 100%;
+    max-height: 500px;
     margin-top: 50px;
     margin-left: 150px;
     width: auto;
   }
 
   #content {
+    display: inline-block;
     margin: 0;
     margin-left: 20px;
     margin-top: 20px;
+    max-height: 500px;
     white-space: nowrap;
     overflow-x: visible;
   }
@@ -136,50 +139,8 @@
     margin: 0;
   }
 
-  /* HOME CSS */
-
-  #home {
-    bottom: 0;
-    display: block;
-    height: 130px;
-    left: 0;
-    margin: auto;
-    position: absolute;
-    right: 0;
-    text-align: center;
-    top: 0;
-    width: 400px;
-  }
-
-  #home h1 {
-    margin: 10px;
-  }
-
-  #home h2 {
-    margin: 5px;
-  }
-
-  #home h3 {
-    margin: 10px;
-  }
-
-  #home ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-  }
-
-  #home ul li {
-    display: inline-block;
-    margin: 0;
-    margin-left: 20px;
-    margin-right: 20px;
-  }
-
-  .version_o_pill animated {
-    position: fixed;
-    left: 0;
-    bottom: 0;
+  .tumblrAutoPager_page_info {
+    display: none;
   }
 
   {CustomCSS}
@@ -201,21 +162,27 @@
 
   <div id='sidebar'>
     <ul>
-      <li><a href='#'>About</a></li>
+      <li><a href='/about'>About</a></li>
       <li><a href='#'>CV</a></li>
-      <li><a href='#'>Contact</a></li>
+      <li><a href='/contact'>Contact</a></li>
     </ul>
   </div>
 
   <div id='container'>
     <div id='content'>
+      <div class = "autopagerize_page_element" >
       {block:Posts}
       <div class='post'>
         {block:Photo}
           <a href='{PhotoURL-HighRes}'><img src="{PhotoURL-HighRes}" alt="{PhotoAlt}"/></a>
         {/block:Photo}
+
+        {block:Text}
+          {Body}
+        {/block:Text}
       </div>
       {/block:Posts}
+      </div>
     </div>
   </div>
 
