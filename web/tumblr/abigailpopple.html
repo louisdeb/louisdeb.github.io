@@ -7,13 +7,14 @@
   <script id='infinite-scroll-script' type='text/javascript' src='http://codysherman.com/tools/infinite-scrolling/code'></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
   <script>
-
+  /* This script fades in the content and loads the featured tag if on the home page */
   $(function() {
     $('#content').css('display', 'none');
     setTimeout(function() {
       if(window.location.pathname == '/') {
         $('#content').empty();
-        $('#content').load('http://louisdeb-abigailpopple.tumblr.com/tagged/featured #content', $('#content').fadeIn());
+        var path = window.location.pathname + 'tagged/featured #content';
+        $('#content').load(path, $('#content').fadeIn());
       } else {
         $('#content').fadeIn();
       }
