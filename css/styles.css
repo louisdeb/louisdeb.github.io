@@ -154,9 +154,10 @@ html {
   left: 0;
   margin: 0 auto;
   margin-bottom: 50px;
+  margin-top: 200px;
   position: absolute;
   right: 0;
-  top: 1;
+  top: 0;
   width: 920px;
 }
 
@@ -170,11 +171,16 @@ html {
 .project .description {
   float: right;
   font-size: 0.9em;
-  max-height: 130px;
   margin: 0;
   overflow: scroll;
   text-align: left;
   width: 690px;
+}
+
+@media screen and (max-height: 800px) {
+  .project .description {
+    max-height: 130px;
+  }
 }
 
 .project .description p {
