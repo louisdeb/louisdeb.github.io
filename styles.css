@@ -1,0 +1,27 @@
+body {
+  margin: 0;
+  margin-left: 10px;
+  padding: 0;
+  font-family: Futura;
+}
+
+h1 {
+  font-size: 40px;
+}
+
+#bio {
+  font-size: 25px;
+  letter-spacing: 0.1px;
+}
+
+.hidden {
+  display: none;
+}
+
+a:link, a:visited {
+  color: inherit;
+}
+
+a:hover, a:active {
+  color: #FAC832;
+}

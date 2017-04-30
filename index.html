@@ -1,239 +1,26 @@
 <!doctype html>
-
 <html>
-<head>
-  <meta name='viewport' content='width=device-width, initial-scale=1'>
-  <link href='css/styles.css' rel='stylesheet' type='text/css'>
-  <link href='css/mobile.css' rel='stylesheet' type='text/css' media='screen and (max-device-width: 1024px)'>
-  <link href='css/tablet.css' rel='stylesheet' type='text/css' media='screen and (max-device-width: 1024px) and (min-device-width: 500px)'>
-  <script src="js/jquery/external/jquery/jquery.js"></script>
-	<script src="js/jquery/jquery-ui.min.js"></script>
-  <script type="text/javascript" src="js/jquery/swipe/touchSwipe.min.js"></script>
-	<script src="js/main.js"></script>
-  <title>Louis de Beaumont</title>
-</head>
+  <head>
+    <title>Louis de Beaumont</title>
+    <link href='styles.css' rel='stylesheet' type='text/css'>
+  </head>
 
-<body>
-  <header id='home'>
-    <div id='title'>
-      <img src='res/me.png'>
-      <h1>LOUIS DE BEAUMONT</h1>
+  <body>
+    <h1>Louis de Beaumont</h1>
+    <div id='bio'>
+      <p>
+        Hi, I am a Computing MEng student at Imperial College London.<br />
+        I am currently on a placement at <a href='https://zeroheight.com'>zeroheight</a>,
+        as a Junior Software Developer.<br />
+        I have a strong interest in innovative technology and its applications to the environment,
+        the economy and human wellbeing.<br /><br />
+
+        Feel free to contact me:<br />
+        <a href='https://twitter.com/louisdeb'>@louisdeb</a><br />
+        <a href='&#109;&#097;&#105;&#108;&#116;&#111;:&#100;&#101;&#098;&#101;&#097;&#117;&#109;&#111;&#110;&#116;&#046;&#108;&#111;&#117;&#105;&#115;&#064;&#103;&#109;&#097;&#105;&#108;&#046;&#099;&#111;&#109;'>debe<span class='hidden'>obfuscate</span>aumont.louis@gm<span class='hidden'>obfuscate</span>ail.com</a><br /><br />
+
+        Examples of my work can be found on my <a href='https://github.com/louisdeb'>Github</a>.
+      </p>
     </div>
-
-    <div id='navigation'>
-      <a id='nav-portfolio' href='#portfolio'><h2>PORTFOLIO</h2></a>
-      <a id='nav-about' href='#about'><h2>ABOUT</h2></a>
-      <a id='nav-contact' href='#contact'><h2>CONTACT</h2></a>
-    </div>
-  </header>
-
-  <div id='home-arrow'>
-    <a id='nav-home' href='#home'><h1>&#8670</h1></a>
-  </div>
-
-  <div class='section' id='portfolio'>
-    <div class='container'>
-      <h1>PORTFOLIO</h1>
-
-      <div id='next-arrow'>
-        <a id='nav-next' href='#'><h1>&#8669</h1></a>
-      </div>
-      <div id='prev-arrow'>
-        <a id='nav-prev' href='#'><h1>&#8668</h1></a>
-      </div>
-
-      <div class='content'>
-
-        <div class='project'>
-          <img src='res/abigailpopple.png'>
-          <div>
-            <div class='title'>
-              <a href='http://abigailpopple.tumblr.com'><h2>Abigail Popple Portfolio (Tumblr Theme)</h2></a>
-            </div>
-            <div class='description'>
-              <p>A simple, clean and bespoke Tumblr theme with a sideways scrolling portfolio.</p>
-              <p></p>
-              <p>View on <a href='https://github.com/louisdeb/louisdeb.github.io/tree/master/web/tumblr/abigailpopple.html'>GitHub</a></p>
-              <p>16/09/2015 - 29/09/2015</p>
-            </div>
-          </div>
-        </div>
-
-        <div class='project'>
-          <img src='res/creative-collab.jpg'>
-          <div>
-            <div class='title'>
-              <a href='http://louisdeb.github.io/web/collab/'><h2>Creative Collaboration</h2></a>
-            </div>
-            <div class='description'>
-              <p>Creative Collaboration gives people the ability to browse creative oppurtunities offered by others, either in their area or online.</p>
-              <p>The website is currently under only front-end development, with back-end development not yet underway.</p>
-              <p>View on <a href='https://github.com/louisdeb/louisdeb.github.io/tree/master/web/collab'>GitHub</a></p>
-              <p>12/08/2015 - On hold</p>
-            </div>
-          </div>
-        </div>
-
-        <div class='project'>
-          <img src='res/anim.jpg'>
-          <div>
-            <div class='title'>
-              <a href='web/animation/animation.html'><h2>Interactive Animation</h2></a>
-            </div>
-            <div class='description'>
-              <p>A small project used as a playground for learning jqeury.</p>
-              <p>View on <a href='https://github.com/louisdeb/louisdeb.github.io/tree/master/web/animation'>Github</a></p>
-              <p>09/05/2015 - On hold</p>
-            </div>
-          </div>
-        </div>
-
-        <div class='project'>
-          <img src='res/portfoliov2.png'>
-          <div>
-            <div class='title'>
-              <a href='http://louisdeb.github.io'><h2>Portfolio v2</h2></a>
-            </div>
-            <div class='description'>
-              <p>My current portfolio, a more intersting design with more technological experimentation.</p>
-              <p>This portfolio used more complicated jquery than I was previously used to, including scrolling behaviour and key presses.</p>
-              <p>View on <a href=''>GitHub</a></p>
-              <p>06/09/2015 - Current</p>
-            </div>
-          </div>
-        </div>
-
-        <div class='project'>
-          <img src='res/portfoliov1.png'>
-          <div>
-            <div class='title'>
-              <a href='web/portfoliov1/index.html'><h2>Portfolio v1</h2></a>
-            </div>
-            <div class='description'>
-              <p>My first github.io portfolio - a simple design used to display current and previous projects.</p>
-              <p>View on <a href='https://github.com/louisdeb/louisdeb.github.io/tree/master/web/portfoliv1'>GitHub</a></p>
-              <p>15/06/2015 - 28/08/2015</p>
-            </div>
-          </div>
-        </div>
-
-        <div class='project'>
-          <img src='res/nostyle.png'>
-          <div>
-            <div class='title'>
-              <a href='http://louisdeb-nostyle.tumblr.com'><h2>No Style (Tumblr Theme)</h2></a>
-            </div>
-            <div class='description'>
-              <p>A style-less Tumblr theme for those who enjoy that kind of style...</p>
-              <p>View raw on <a href='https://github.com/louisdeb/louisdeb.github.io/tree/master/web/tumblr/no-style.html'>GitHub</a></p>
-              <p>26/07/2015 - 28/07/2015</p>
-            </div>
-          </div>
-        </div>
-
-        <div class='project'>
-          <img src='res/vector3.png'>
-          <div>
-            <div class='title'>
-              <a><h2>OpenGL 3D Vector Visualisation</h2></a>
-            </div>
-            <div class='description'>
-              <p>Using OpenGL, Tao.freeglut, and written in C#, this project was commissioned by an A2 Further Maths teacher to aid teaching 3D vectors in the classroom.</p>
-              <p>The project was extensively covered in the report, including design and appraisal.</p>
-              <p>To further aid visualisation of the vectors, translation, rotation and <a href='https://github.com/louisdeb/OpenGL-3D-Vectors/blob/master/vector-anaglyph.png'>3D anaglyph</a> (use with red-cyan glasses) features were included.</p>
-              <p>View project <a href='https://github.com/louisdeb/OpenGL-3D-Vectors/blob/master/Vector Visualisation Software.pdf'>report</a></p>
-              <p>View raw on <a href='https://github.com/louisdeb/OpenGL-3D-Vectors'>GitHub</a>.</p>
-              <p>01/11/2013 - 25/04/2014</p>
-            </div>
-          </div>
-        </div>
-
-        <div class='project'>
-          <img src='res/protochip.png'>
-          <div>
-            <div class='title'>
-              <a href='web/protochip/index.html'><h2>Protochip</h2></a>
-            </div>
-            <div class='description'>
-              <p>A website offering a free single page website to independent video game developers to help promote their games.</p>
-              <p>The website also contained an easy to follow HTML to help developers simply define their content distribution.</p>
-              <p>View on <a href='https://github.com/louisdeb/louisdeb.github.io/tree/master/web/protochip'>Github</a></p>
-              <p>07/07/2013 - On hold</p>
-            </div>
-          </div>
-        </div>
-
-        <div class='project'>
-          <img src='res/igem.png'>
-          <div>
-            <div class='title'>
-              <a href='http://2013hs.igem.org/Team:St_Pauls_London'><h2>IGEM St Paul's School Wiki</h2></a>
-            </div>
-            <div class='description'>
-              <p>A <a href='https://www.mediawiki.org/wiki/MediaWiki'>MediaWiki</a> powered site for St Paul's School's IGEM 2013 team.</p>
-              <p>The project taught me to build on constant design and usage feedback from the other members of the IGEM team, to use MediaWiki, and to create a professional looking website.</p>
-              <p>07/05/2013 - 19/06/2013</p>
-            </div>
-          </div>
-        </div>
-
-        <div class='project'>
-          <img src='res/twyst.png'>
-          <div>
-            <div class='title'>
-              <a href='web/twystwinder/index.html'><h2>TwystWinder</h2></a>
-            </div>
-            <div class='description'>
-              <p>A website I created for Team Logyc, a Young Enterprise team.</p>
-              <p>It was my first oppurtunity to buy a domain and web hosting.</p>
-              <p>View on <a href='https://github.com/louisdeb/louisdeb.github.io/tree/master/web/twystwinder'>Github</a></p>
-              <p>8/12/2012 - 06/02/2013</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class='section' id='about'>
-    <div class='container'>
-      <h1>ABOUT</h1>
-
-      <div class='content'>
-        <div class='col-left'>
-          <p>Hello,</p>
-          <p>I am a third year student at <a href='https://www.imperial.ac.uk/'>Imperial College London</a>.
-          <p>View my portfolio for examples of my web development work.</p>
-          <p>You can view my CV <a href='https://github.com/louisdeb/louisdeb.github.io/blob/master/res/CV.pdf'>here</a>.</p>
-          <br><br>
-          <p>I am also a gigging musician on London's folk scene.</p>
-          <p>My music can be found <a href='https://www.facebook.com/louisdebmusic'>here</a>.</p>
-        </div>
-
-        <div class='col-right'>
-          <img src='res/me.png'>
-          <p>Age: 21</p>
-          <p>Location: London</p>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class='section' id='contact'>
-    <div class='container'>
-      <h1>CONTACT</h1>
-
-      <div class='content'>
-        <div class='col-left'>
-          <p>Contact me by email:</p>
-          <a href='mailto:debeaumont.louis@gmail.com'><p style='margin-left: 10px;'>debeaumont.louis@gmail.com</p></a>
-          <br>
-          <p><a href='https://www.facebook.com/louisdebmusic'>Facebook</a></p>
-          <p><a href='http://github.com/louisdeb'>GitHub</a></p>
-        </div>
-      </div>
-    </div>
-  </div>
-
-</body>
+  </body>
 </html>
