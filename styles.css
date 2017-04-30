@@ -2,11 +2,12 @@ body {
   margin: 0;
   margin-left: 10px;
   padding: 0;
-  font-family: Futura;
+  font-family: Gill Sans, Futura, sans-serif;
 }
 
 h1 {
   font-size: 40px;
+  font-weight: 600;
 }
 
 #bio {
