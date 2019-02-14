@@ -1,6 +1,7 @@
 body {
   margin: 0;
   margin-left: 10px;
+  margin-bottom: 25px;
   padding: 0;
   font-family: Gill Sans, Futura, sans-serif;
 }
@@ -8,6 +9,16 @@ body {
 h1 {
   font-size: 40px;
   font-weight: 600;
+}
+
+h2 {
+  font-size: 30px;
+  font-weight: 400;
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: 2px;
 }
 
 #bio {
@@ -25,4 +36,24 @@ a:link, a:visited {
 
 a:hover, a:active {
   color: #FAC832;
+}
+
+.section {
+  margin-left: 50px;
+  width: 800px;
+}
+
+.section .header {
+  height: 50px;
+}
+
+.section .header .title {
+  float: left;
+  font-size: 25px;
+}
+
+.section .header .date {
+  float: right;
+  margin-top: 5px;
+  font-size: 20px;
 }
