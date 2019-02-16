@@ -1,59 +1,81 @@
+html {
+  margin: 0
+}
+
 body {
   margin: 0;
-  margin-left: 10px;
-  margin-bottom: 25px;
   padding: 0;
-  font-family: Gill Sans, Futura, sans-serif;
+  font-family: Helvetica, sans-serif
 }
 
 h1 {
   font-size: 40px;
-  font-weight: 600;
+  font-weight: 600
 }
 
 h2 {
   font-size: 30px;
-  font-weight: 400;
+  font-weight: 400
 }
 
 p {
-  margin-top: 0;
-  margin-bottom: 2px;
+  line-height: 20px
 }
 
-#bio {
-  font-size: 25px;
-  letter-spacing: 0.1px;
+#rappa {
+  height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+  overflow: hidden
 }
 
-.hidden {
-  display: none;
+#content {
+  flex: 1;
+  height: 100vh;
+  width: 50%;
+  min-width: 310px;
+  padding-top: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  overflow: scroll
+  /* border-right: 1px solid grey; */
 }
 
-a:link, a:visited {
-  color: inherit;
+#content h1 {
+  text-align: center;
+  font-weight: 500;
+  margin-bottom: 100px
 }
 
-a:hover, a:active {
-  color: #FAC832;
+#photos {
+  flex: 1;
+  height: 100vh;
+  width: 50%;
+  min-width: 500px; /* Control minimum size at which photo is shown. */
+  overflow: hidden
 }
 
-.section {
-  margin-left: 50px;
-  width: 800px;
+#photos img {
+  width: 100%;
+  height: 100%;
+  min-width: 300px;
+  object-fit: cover;
+  margin: auto;
+  position: relative
 }
 
-.section .header {
-  height: 50px;
+.album {
+  margin-top: 20px;
+  margin-bottom: 20px
 }
 
-.section .header .title {
-  float: left;
-  font-size: 25px;
+.album h2 {
+  margin: 0;
+  cursor: crosshair;
+  text-decoration: underline
 }
 
-.section .header .date {
-  float: right;
-  margin-top: 5px;
-  font-size: 20px;
+.album .content {
+  margin-top: 20px;
+  margin-bottom: 20px
 }
