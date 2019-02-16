@@ -69,9 +69,12 @@ p {
   margin-bottom: 20px
 }
 
+.album-title {
+  cursor: crosshair
+}
+
 .album h2 {
   margin: 0;
-  cursor: crosshair;
   text-decoration: underline
 }
 
