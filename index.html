@@ -4,12 +4,13 @@
     <title>Louis de Beaumont</title>
     <link href='styles.css' rel='stylesheet' type='text/css'>
 
-    <script src="scripts/jquery-3.3.1.slim.js"></script>
+    <script src="scripts/jquery-3.3.1.min.js"></script>
+    <script src="scripts/jquery-ui.min.js"></script>
     <script src="scripts/expander.js"></script>
   </head>
 
   <body>
-    <div id="rappa">
+    <div id="content-rappa">
       <div id="content">
         <h1>Louis de Beaumont</h1>
 
@@ -28,7 +29,7 @@
         <div class="album" id="green-note">
           <span class="album-title"><h2>Live at The Green Note</h2></span>
 
-          <div class="album-content" hidden="true">
+          <div class="album-content">
             <iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/708774618&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
 
             <p>
@@ -40,7 +41,10 @@
       </div>
 
       <div id="photos">
-        <img id="photo" src="images/album1.png" />
+        <div id="photos-rappa">
+          <img id="photo1" src="images/album1.png" />
+          <img id="photo2" src="images/album1.png" />
+        </div>
       </div>
     </div>
   </body>
