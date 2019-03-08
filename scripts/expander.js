@@ -4,19 +4,20 @@ $(document).ready(function() {
     if(i != 0)
       $(this)[0].style.height = 0;
   });
-  $('.album-title')[0].click();
 });
 
 function changePhoto(id) {
-  var photo1 = $('#photo1');
-  var photo2 = $('#photo2');
+  var photos = $('.photo');
 
-  photo1.hide();
-  photo1.bind('load', function() {
-    photo1.fadeIn(function() {
-      photo2.attr('src', 'images/' + id + '.png')
-    });
-  }).attr('src', 'images/' + id + '.png');
+  photos.each(function() {
+    var elem = $(this);
+    var isTarget = elem[0].src.indexOf(id) != -1;
+    if (isTarget) {
+      elem.fadeIn();
+    } else {
+      elem.fadeOut();
+    }
+  });
 }
 
 function titleClicked(elem) {
