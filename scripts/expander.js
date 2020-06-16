@@ -4,6 +4,12 @@ $(document).ready(function() {
     if(i != 0)
       $(this)[0].style.height = 0;
   });
+
+  // ok i know! i'm just hacking...
+  setTimeout(function() {
+    $('#photo1').show();
+    $('#photo2').show();
+  }, 500);
 });
 
 function changePhoto(id) {
