@@ -102,5 +102,10 @@ p {
   transition: height 0.5s ease;
   overflow: hidden;
   margin-top: 20px;
-  margin-bottom: 20px
+  margin-bottom: 20px;
+  margin-right: 10px;
+}
+
+small {
+  font-size: 10px;
 }

@@ -1,14 +1,11 @@
 $(document).ready(function() {
   $('.album-title').click(titleClicked);
-  $('.album-content').each(function(i, o) {
-    if(i != 0)
-      $(this)[0].style.height = 0;
-  });
 
   // ok i know! i'm just hacking...
   setTimeout(function() {
     $('#photo1').show();
     $('#photo2').show();
+    $('#photo3').show();
   }, 500);
 });
 
@@ -29,14 +26,14 @@ function changePhoto(id) {
 function titleClicked(elem) {
   var id = elem.currentTarget.parentElement.id;
 
-  // Hide every section content except for this sections
-  $('.album-content').each(function(i, o) {
+  // Hide every section content except for this sections (¿que?)
+  $(".album-content").each(function (i, o) {
     var content = $(this)[0];
     var contentId = content.parentElement.id;
-    if(contentId != id)
-      content.style.height = 0;
-    else
-      content.style.height = content.scrollHeight + 'px';
+    if (contentId != id) 
+      $(this).animate({height: 0}, 20, "linear");
+    else 
+      $(this).animate({height: content.scrollHeight + "px"}, 20, "linear");
   });
 
   changePhoto(id);
